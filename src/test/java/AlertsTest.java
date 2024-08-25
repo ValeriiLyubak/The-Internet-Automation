@@ -1,20 +1,17 @@
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.AlertPage;
-import pages.BasePage;
 
 import static org.testng.Assert.assertEquals;
 
 public class AlertsTest extends BaseTest{
 
-    private BasePage basePage;
     private AlertPage alertPage;
 
     @BeforeClass
     @Override
     public void setUp() {
         super.setUp();
-        basePage = new BasePage(driver);
         alertPage = new AlertPage(driver);
     }
 
